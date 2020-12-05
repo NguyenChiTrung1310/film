@@ -1,0 +1,12 @@
+@import './styles/styles.scss';
+
+.App {
+  text-align: center;
+  color: $white;
+}
+
+.appBar{
+  position: fixed;
+  z-index: 10;
+  height: 100px;
+}

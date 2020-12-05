@@ -1,0 +1,112 @@
+@import '../../styles/styles';
+
+@include hoverAnimation(circle) {
+  0% {
+    @include circle-animation($black-opacity, 1px, 1px, -1, 0,0,0,0, auto, 100%)
+  }
+  100% {
+    @include circle-animation($gray-1, 5000% , 5000%, -1, 0,0,0,0, auto, 0)
+  }
+}
+
+@include hoverAnimation(circle1) {
+  0% {
+    @include circle-animation($black-opacity, 1px, 1px, -1, 0,0,0,0, auto, 100%)
+  }
+  100% {
+    @include circle-animation($white, 5000% , 5000%, -1, 0,0,0,0, auto, 0)
+  }
+}
+
+.link, .logout, .user {
+    position: relative;
+    z-index: 1;
+    @include text-style('lighter', 'Montserrat');
+}
+
+.link-menu{
+    width: 100px; 
+    padding: 16px 0;
+    font-size: 22px;  
+
+    &::after{
+      @include hover-menu();
+    }
+
+    &:hover::after{
+        @include animation('circle 1.5s ease-in-out forwards');
+    }
+}
+  
+.auth, .link-user, .logout{
+  @include menu-style();
+
+  .admin-item{
+    position: relative;
+
+    .admin-icon{
+      width: 24px;
+      height: 28px;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+  }
+  
+}
+
+.logout {
+  height: 40px !important;
+  text-transform: capitalize!important;
+  
+  .logout-item{
+    padding-right: 20px;
+  }
+}
+
+.hover-btn{
+  &::after{
+    @include hover-menu();
+  }
+
+  &:hover::after{
+    @include animation('circle1 1.5s ease-in-out forwards');
+  }
+
+  &:hover{
+    color: $blue-3!important;
+  }
+}
+
+.hover-link{
+  height: 40px!important;
+  transition: all .3s ease-in-out;
+  &::after{
+    @include hover-menu();
+  }
+
+  &:hover::after{
+    @include animation('circle1 1.5s ease-in-out forwards');
+  }
+
+  &:hover{
+    color: $blue-3!important;
+    border-radius: 5px;
+  }
+}
+
+.updateBtn{
+  font-size: 24px!important;
+}
+
+// change theme menu popup icon
+.MuiPaper-root{
+  background-color: #1b1b1b!important;
+}
+
+#simple-menu > div.MuiPaper-root.MuiMenu-paper.MuiPopover-paper.MuiPaper-elevation8.MuiPaper-rounded {
+  width: 220px !important;
+  top: 60px !important;
+  background-color: $blue-3!important;
+}

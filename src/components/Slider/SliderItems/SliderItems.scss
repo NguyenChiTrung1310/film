@@ -1,0 +1,46 @@
+@import ' ./../../../../styles/styles.scss';
+
+.img-card {
+  position: relative;
+  border-radius: 4px;
+  margin-top: 20px;
+  background: $black-opacity;
+  
+  overflow: hidden;
+  box-shadow: 0 2px 4px 0 rgba(59, 43, 43, 0.2);
+  transition: 0.3s;
+  height: 400px;
+  .img {
+    width: 100%;
+    height: 280px;
+    object-fit: cover;
+  }
+
+  .card-body{
+    width: 100%;
+  }
+
+  .MuiCardContent-root.card-body {
+    border: 1px solid $black-opacity;
+    color: $white;
+    padding: 0px;
+    .card-title {
+      font-size: 24px;
+      font-weight: 600;
+    }
+    .card-text {
+      margin-top: 10px;
+      font-size: 20px;
+
+      .icon-star{
+        vertical-align: bottom;
+        padding-bottom: 2px;
+        color: $orange;
+      }
+    }
+  }
+}
+
+.imgCard:hover {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}

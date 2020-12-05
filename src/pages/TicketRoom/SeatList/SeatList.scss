@@ -1,0 +1,13 @@
+@import '../../../styles/styles';
+
+.seat{
+    margin: 6px;
+    width: 5%;
+    cursor: pointer;
+
+    .chair{
+        background-color: $blue-3;
+        border: 1px solid $white;
+        color: $white;
+    }
+}

@@ -1,0 +1,60 @@
+@import '../../styles/styles';
+
+.container{
+    margin-top: 100px;
+    height: auto;
+        .banner{
+            height: 600px!important;
+            position: relative;
+            .img-banner{
+                height: 100%;
+                width: 100%;
+            }   
+            
+            .img-item{
+                display: flex;
+                position: absolute;
+                z-index: 10;
+                top: 0;
+
+                .img-cine{
+                    height: 100px;
+                }
+            }
+            .tabs{
+                position: absolute;
+                top: 180px;
+                left: 50%;
+                transform: translateX(-50%);
+                z-index: 10;
+            }
+            .tab{
+                margin-right: 10px;
+
+            }
+            .cinema-item{
+                width: 100px;
+                height: 100px;
+            }
+        }
+
+
+        .info-section{
+            width: 100%;
+            height: auto;
+            display: flex;
+            justify-content: space-between;
+            .left-section{
+                width: 60%;
+
+                .tab-item{
+                    padding-left: 40px;
+                    width: 250%;
+                }
+            }
+
+            .right-section{
+                width: 100%;
+            }
+        }   
+}

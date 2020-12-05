@@ -1,0 +1,37 @@
+@import '../../../../styles/styles';
+ 
+
+.schedule-item{
+    border: 1px solid $white !important;
+    margin-bottom: 4px;
+    width: 220px;
+    height: 40px;
+    text-align: center;
+    text-decoration: none;
+    display: flex;
+    align-items: center !important;
+    justify-content: center !important;
+
+    .devide{
+        width: 1px;
+        height: 100%;
+        background-color: $white;
+    }
+    
+    .schedule-detail{
+        width: 100%;
+        text-decoration: none !important;
+        color: $white !important;
+    }
+
+    .cinema-name{
+        height: 100%;
+        width: 25%;
+        border-radius: 4px;
+        font-weight: bolder;
+        color: $white;
+        transition: all .3s ease-in-out;
+        background-color: $blue-3;
+    }
+}
+

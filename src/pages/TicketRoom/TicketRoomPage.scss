@@ -1,0 +1,82 @@
+@import '../../styles/styles';
+
+.ticket-room-page{
+    width: 100%;
+    height: auto;
+    margin-top: 50px;
+
+    .ticket-detail{
+        display: flex;
+        width: 100%;
+        height: 60vh;
+        .trailer-film{
+            width: 100%;
+            .img-film{
+                width: 100%;
+                height: 100%;
+                background-position: center;
+                background-size: cover;
+            }
+        }
+    
+        .movie-information{
+            width: 100%;
+            height: 100%;
+            overflow: scroll;
+            text-align: left;
+            padding: 0 30px;
+            color: $black;
+            text-align: left;
+            
+            background-image: url('../../assets/images/gold-ticket.png');
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: 104vh 200vh;
+            
+            .ticket{
+                width: 100%;
+                height: 260px;
+                margin-top: 10px;
+    
+                position: relative;
+    
+                .ticket-section{
+                    width: 100%;
+    
+                    .ticket-info{
+                        margin-bottom: 10px;
+                        .label-icon{
+                            vertical-align: bottom;
+                            padding-bottom: 4px;
+                        }
+                    }       
+                }
+
+                .checkout{
+                    width: 100%;
+                    position: absolute;
+                    left: 50%;
+                    top: 80%;
+                    transform: translate(-10% ,-50%);
+                }
+            }
+
+        }
+    }
+
+    .screen{
+        margin-top: 60px;
+        width: 100%;
+        height: 20px;
+        background-color: lightsalmon;
+        font-style: italic;
+        font-weight: bolder;
+    }
+    
+    .seat-list-by-theater{
+        width: 100%;
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+    }
+}

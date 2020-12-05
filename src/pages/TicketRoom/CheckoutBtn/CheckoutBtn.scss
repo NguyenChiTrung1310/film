@@ -1,0 +1,60 @@
+@import '../../../styles/styles.scss';
+
+.checkout-btn{
+    border: 1px solid $blue-3 !important;
+    transition: all 0.5s !important;
+    cursor: pointer !important;
+
+    display: inline-block;
+    position: relative;
+
+    &::after {
+        content: '»';
+        position: absolute;
+        opacity: 0;
+        top: 45%;
+        transform: translateY(-45%);
+        right: -20px;
+        transition: 0.5s;
+    }
+
+    &:hover {
+        padding-right: 24px;
+        padding-left: 8px;
+        opacity: 0.9;
+        color: $white !important;
+        background-color: $blue-3 !important;
+        border: 1px solid $white !important;
+    }
+
+    &:hover::after {
+        opacity: 1;
+        right: 10px;
+        color: $white !important;
+    }
+}
+
+.style {
+    color: $blue-3 !important;
+    font-family: 'Montserrat', sans-serif !important;
+    font-weight: bolder !important;
+}
+
+.confirm-dialog{
+    color: $white !important;
+    font-family: 'Montserrat', sans-serif !important;
+    font-weight: 400 !important;
+    font-size: 25px !important;
+    text-align: left;
+}
+
+.btn-style{
+    color: $white !important;
+}
+
+
+// fix css 
+.MuiPaper-root.MuiDialog-paper.MuiDialog-paperScrollPaper.MuiDialog-paperWidthSm.MuiPaper-elevation24.MuiPaper-rounded{
+    background-color: $blue-3 !important;
+    width: 400px !important;
+}

@@ -1,0 +1,14 @@
+@import './styles/styles.scss';
+
+body {
+  margin: 0;
+
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  /////////////////////////////
+
+  background-color: $black-1 !important;
+}
+* {
+  font-family: 'Montserrat', sans-serif !important;
+}

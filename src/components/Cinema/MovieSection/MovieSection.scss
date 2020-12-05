@@ -1,0 +1,89 @@
+@import '../../../styles/styles';
+
+.movie-schedule{
+    width: 100%;
+    height: 100%;
+    
+    margin-top: 24px;
+    padding-left: 14px;
+
+    border-left: 1px solid $gray;
+
+    .movie-item{
+        display: flex;
+        flex-direction: column;
+        padding-bottom: 30px;
+
+        .item{
+            display: flex;
+            position: relative;
+            height: 200px;
+            width: 100%;
+            margin-bottom: 30px;
+
+            .movie-images{
+                height: 200px;
+                width: 200px;
+                position: relative;
+
+                .loading{
+                    position: absolute;
+                    top: 50%;
+                    left: 50%;
+                    transform: translate(-50%, -50%);
+                }
+
+                .movie-img{
+                    height: 100%;
+                    width: 100%;
+                    margin-right: 50px;
+                }
+            }
+            
+            
+            .content{
+                position: absolute;
+                top: 0;
+                left: 250px;
+                height: 100%;
+                width: 60%;
+                text-align: left;
+                .movie-content{   
+                    color: $white;
+                    font-size: 20px;
+                    text-decoration: none;
+                    text-transform: capitalize;
+                    
+                }
+                .schedule-content{
+                    height: 70%;
+                    margin: 30px 10px 10px 0;
+                    display: flex;
+                    flex-wrap: wrap;
+                    justify-content: space-between;
+                }
+            }
+
+            .next-detail{
+                display: flex;
+                align-items: center;
+
+                position: absolute;
+                bottom: 0;
+                right: 0;
+                color: $blue-3;
+                .detail{
+                    text-decoration: none;
+                    padding-right: 5px;
+                    color: $blue-3;
+                }
+            
+            }
+        }
+
+        .movie-divider{
+            background-color: $gray;
+            width: 100%;
+        }
+    }
+}

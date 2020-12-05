@@ -1,0 +1,97 @@
+@import './_variables';
+
+@mixin normal-font-style {
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    font-family: "Montserrat", sans-serif;
+}
+
+@mixin text-style ($fontW: 'lighter', $fontF: '"Montserrat", sans-serif'){
+    color: $white;
+    text-decoration: none;
+    overflow: hidden;
+    font-weight: $fontW, sans-serif !important;;
+    font-family: $fontF, sans-serif !important;;
+}
+
+
+
+// HOVER + ANIMATION
+
+@mixin hover-menu(){
+    display: block;
+    position: absolute;
+    margin: 0;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    content: '.';
+    color: transparent;
+    width: 1px;
+    height: 1px;
+    border-radius: 50%;
+    background: transparent;
+}
+
+// hover Animation menu navigation
+@mixin hoverAnimation ($circle) {
+    @keyframes #{$circle} {
+        @content;
+    }
+}
+
+@mixin animation($str) {
+    -webkit-animation: #{$str};
+    -moz-animation: #{$str};
+    -ms-animation: #{$str};
+    -o-animation: #{$str};
+    animation: #{$str};      
+}
+
+@mixin circle-animation($bg, $height, $width, $zIndex, $top, $left, $bottom, $right, $margin, $borderRadius) {
+    background: $bg;
+    height: $height;
+    width: $width;
+    z-index: $zIndex;
+    top: $top;
+    left: $left;
+    bottom: $bottom;
+    right: $right;
+    margin: $margin;
+    border-radius: $borderRadius;
+}
+
+@mixin menu-style{
+    width: 200px!important;
+    margin: auto;
+
+    text-decoration: none;
+    color: $white !important;
+    font-size: 20px!important;
+
+    position: relative;
+
+    .menu-item{
+        display: flex;
+        justify-content: center !important;
+        align-items: center !important;
+        
+        width: 140px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+  
+        .text-item{
+          font-size: 20px !important;
+          width: 70%;
+        }
+  
+        .icon-item{
+          width: 30%;
+        }
+      }
+}

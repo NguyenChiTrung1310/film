@@ -1,0 +1,19 @@
+@import '../../styles/styles.scss';
+
+.main {
+  padding-top: 100px;
+  .image {
+    height: 100%;
+    width: 100%;
+    margin-top: 20px;
+  }
+  .title-detail {
+    padding: 35px;
+  }
+  .button {
+    //margin: 10px;
+  }
+  .MuiContainer-maxWidthLg {
+    padding-top: 100px;
+  }
+}

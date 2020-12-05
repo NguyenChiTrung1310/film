@@ -1,0 +1,15 @@
+@import '../../../../styles/styles';
+
+.cinema-schedule{
+    margin-bottom: 40px;
+    width: 100%;
+
+    .theater-name{
+        text-align: left !important;
+    }
+
+    .icon{
+        vertical-align: text-bottom;
+        padding-bottom: 4px;
+    }
+}
